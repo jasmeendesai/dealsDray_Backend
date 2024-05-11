@@ -24,7 +24,8 @@ app.use((req, res, next)=>{
 app.use(express.json())
 app.use(express.urlencoded({extended : true}))
 app.use(cors({
-    origin : "https://amazing-eclair-c3891d.netlify.app",
+    origin : "https://delightful-figolla-4ce327.netlify.app",
+    credentials: true
 }))
 app.use(cookieParser())
 
