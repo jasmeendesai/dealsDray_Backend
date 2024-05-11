@@ -56,6 +56,8 @@ try {
         
         return res.cookie("accessToken", token, {
             httpOnly : true,
+            sameSite: "none", // Adjust as per your requirements
+            secure: true,
         }).status(200).json({data: other, message : "LoggedIn Successfully!"})
 
     } catch (error) {
